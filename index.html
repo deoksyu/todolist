@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToDoList MVP</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>ToDoList</h1>
+    <section class="input-bar" aria-label="할 일 추가">
+      <input id="task-input" type="text" placeholder="할 일을 입력하세요" aria-label="할 일 입력" />
+      <button id="add-btn" aria-label="추가">추가</button>
+      <div id="hint" class="hint" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+    <ul id="task-list" class="task-list" aria-label="할 일 목록"></ul>
+  </main>
+
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/state.js"></script>
+  <script src="scripts/renderer.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
